@@ -1,0 +1,11 @@
+.custom-container {
+  @include min-screen(1440) {
+    max-width: 1240px;
+  }
+}
+.path-img {
+  position: absolute;
+  left: 0;
+  bottom: 150px;
+  z-index: -1;
+}

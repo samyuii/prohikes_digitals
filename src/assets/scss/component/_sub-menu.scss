@@ -1,0 +1,51 @@
+.sub-menu {
+  position: absolute;
+  z-index: 9999;
+  top: 100%;
+  right: 0;
+  @include min-screen(1200){
+    left: 0;
+  }
+  visibility: hidden;
+  width: 230px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding: 18px 0;
+  list-style: none;
+  transition: all 0.4s ease 0.2s;
+  opacity: 0;
+  border-bottom: 4px solid $primary;
+  background-color: #fff;
+  box-shadow: 0 2px 29px rgba(0, 0, 0, 0.05);
+
+  li {
+    & + li {
+      margin-left: 0px !important;
+    }
+  }
+  .sub-menu-link {
+    font-family: "Metropolis Regular";
+    // @include min-screen(1200){
+    //   text-align: left;
+    // }
+    // text-align: right;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.375;
+    display: block;
+    padding: 8px 30px;
+  }
+}
+
+.main-menu {
+  li {
+    &:hover {
+      .sub-menu {
+        visibility: visible;
+        margin-top: 15px;
+        opacity: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.fanfact {
+  .title {
+    color: $headings-color;
+    transition: all 0.3s;
+    &:hover{
+      color: $primary;
+    }
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0px;
+    font-size: 60px;
+    @include max-screen(992, 1199) {
+      font-size: 40px;
+    }
+
+    @include max-screen(576, 991) {
+      font-size: 30px;
+    }
+
+    @include max-screen(575) {
+      font-size: 30px;
+    }
+  }
+  .sub-title {
+    color: $dark;
+    font-weight: 400;
+    line-height: 2.083;
+    margin-bottom: 0;
+    font-size: 24px;
+    @include max-screen(992, 1199) {
+      font-size: 20px;
+    }
+    @include max-screen(576, 991) {
+      font-size: 18px;
+    }
+
+    @include max-screen(575) {
+      font-size: 15px;
+    }
+  }
+}
+
+.funfact-svg {
+  position: absolute;
+  top: -95px;
+  left: 0px;
+  width: 100%;
+  height: 535px;
+  z-index: -1;
+}
+
+.funfact-path {
+  fill: none;
+  stroke: #e1e1e1;
+  stroke-width: 1px;
+  fill-rule: evenodd;
+  opacity: 0.55;
+}

@@ -1,0 +1,40 @@
+.title-section {
+  .title {
+    color: $dark;
+    font-weight: 700;
+    line-height: 1.19;
+    font-size: 42px;
+    @include max-screen(992, 1199) {
+      font-size: 40px;
+    }
+
+    @include max-screen(991) {
+      font-size: 30px;
+      margin-bottom: 1rem;
+    }
+
+    @include max-screen(767) {
+      font-size: 30px;
+    }
+
+    margin-bottom: 1.6rem;
+  }
+  .sub-title {
+    font-family: $headings-font-family;
+    color: $sub-headings-color;
+    display: block;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 2.777;
+    margin-bottom: 0.125rem;
+    font-size: 18px;
+  }
+}
+
+.sub-section-title {
+  .title {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}

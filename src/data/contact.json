@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "classOption": "address-list mb-4 mb-xl-10 pb-2",
+        "title": "Office Addres",
+        "info": "Gyan Vihar Marg, Jagatpura, Jaipur, Rajasthan 302017"
+    },
+    {
+        "id": 2,
+        "classOption": "address-list mb-4 mb-xl-10 pb-2",
+        "title": "Phone Number",
+        "info": " +917610805234 <br /> +918619465162 "
+    },
+    {
+        "id": 3,
+        "classOption": "address-list",
+        "title": "Web Address",
+        "info": "prohikes.sm@gmail.com <br /> www.prohikes.tech"
+    }
+]

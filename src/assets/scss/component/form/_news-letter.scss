@@ -1,0 +1,43 @@
+.news-letter-form {
+  position: relative;
+  .form-control {
+    height: 70px;
+    @include max-screen(767) {
+      height: 60px;
+    }
+    @include min-screen(992) {
+      padding: 0.6975rem 11rem 0.9375rem 0.9375rem;
+    }
+    @include max-screen(768,991) {
+      padding: 0.6975rem 11rem 0.9375rem 0.9375rem;
+    }
+
+    padding: 0.6975rem 8rem 0.9375rem 0.9375rem;
+
+    border-radius: 50px;
+  }
+  .search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 160px;
+    @include max-screen(767) {
+      width: 120px;
+    }
+    height: 100%;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background: $dark;
+    &:hover {
+      background: $primary;
+    }
+    color: $white;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    @include max-screen(767) {
+      font-size: 16px;
+    }
+  }
+}

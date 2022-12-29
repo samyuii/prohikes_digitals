@@ -1,0 +1,131 @@
+[
+    {
+        "slider": [
+            {
+                "id": 1,
+                "image": "./images/slider/slide2.png",
+                "title": "Hike up your <br />business Profit<br />with <span class='text-decoration-underline'>ProHikes</span>"
+            }
+        ]
+    },
+    {
+        "brand": [
+            {
+                "id": 1,
+                "image": "./images/brand-logo/1.png"
+            },
+            {
+                "id": 2,
+                "image": "./images/brand-logo/2.png"
+            },
+            {
+                "id": 3,
+                "image": "./images/brand-logo/3.png"
+            },
+            {
+                "id": 4,
+                "image": "./images/brand-logo/4.png"
+            },
+            {
+                "id": 5,
+                "image": "./images/brand-logo/5.png"
+            }
+        ]
+    },
+    {
+        "iconBox": [
+            {
+                "id": 1,
+                "className": "grid-item mb-7",
+                "icon": "./images/feature/logo/1.png",
+                "title": "Best Value",
+                "excerpt": "Our experts use the most cost-effective strategies and techniques. We complete a full analysis of your Business and create a custom strategy in order to achieve maximum results with minimal costs."
+            },
+            {
+                "id": 2,
+                "className": "grid-item card-mt-75 mb-7",
+                "icon": "./images/feature/logo/2.png",
+                "title": "Flexibility",
+                "excerpt": "Our proven system is one of the many reasons why we’re confident we can deliver a reliable, on-time, within-budget and stress-free service that allows our clients to focus on their clients. "
+            },
+            {
+                "id": 1,
+                "className": "grid-item mb-7",
+                "icon": "./images/feature/logo/3.png",
+                "title": " Continuous Innovation",
+                "excerpt": "Technology is constantly developing. ProHikes has dealt with all of the advancements, and despite the difficulties, we have produced excellent results for all of our clients."
+            }
+        ]
+    },
+    {
+        "testimonial": [
+            {
+                "id": 1,
+                "excerpt": "It really met my requirements. You guys were very patient even though there were delays from my side. The price was competitive and all our requirements were met. The social media marketing work was excellent too. All the deliverables reached us on time. Definitely recommended!!!",
+                "authorThumb": "./images/testimonial/avater.png",
+                "name": "Gaurav Prajapat",
+                "designation": "CEO, Raj Gems"
+            },
+            {
+                "id": 2,
+                "excerpt": "The marketing produced definitive and solid results. Everything was organized to perfection and delivered very systematically. You guys have been impressive, good team, very prompt in responding to queries and respect time.",
+                "authorThumb": "./images/testimonial/2.png",
+                "name": "Priyanshu Jain",
+                "designation": "Founder, Khoj Podcast"
+            },
+            {
+                "id": 3,
+                "excerpt": "The initial results are promising and are in the direction we would have hoped for. Thankyou for providing insights and suggestions, which otherwise i could'nt think of. My experience has been amazing !!",
+                "authorThumb": "./images/testimonial/avater.png",
+                "name": "Shyam Sundar Vijay",
+                "designation": "CEO, Kriptech infomatics"
+            }
+        ]
+    },
+    {
+        "funfact": [
+            {
+                "id": 1,
+                "number": 100,
+                "title": "Projects done"
+            },
+            {
+                "id": 2,
+                "number": 50,
+                "title": "Happy Clients"
+            },
+            {
+                "id": 3,
+                "number": 2,
+                "title": "Year Experience"
+            },
+            {
+                "id": 4,
+                "number": 100,
+                "title": "Retention Rate"
+            }
+        ]
+    },
+    {
+        "team": [
+            {
+                "id": 1,
+                "thumb": "./images/team/rounded-img1.png",
+                "name": "Yash Varindani",
+                "designation": "Head of Communications"
+            },
+            {
+                "id": 2,
+                "thumb": "./images/team/rounded-img2.png",
+                "name": "Samyak Jain",
+                "designation": "Head of R&D"
+            },
+            {
+                "id": 3,
+                "thumb": "./images/team/rounded-img3.png",
+                "name": "Praveen Karwa",
+                "designation": "Head of Marketing"
+            }
+        ]
+    }
+]

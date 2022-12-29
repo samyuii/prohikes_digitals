@@ -1,0 +1,56 @@
+/*header */
+
+.header-section {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  padding-top: 70px;
+  @include max-screen(991) {
+    padding-top: 40px;
+  }
+  left: 0;
+  z-index: 15;
+}
+
+.is-sticky {
+  padding: 15px 0px;
+  background: $white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-animation: fadeInDown 0.5s ease-in-out;
+  animation: fadeInDown 0.5s ease-in-out;
+  -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+}
+
+/* Main Menu */
+.main-menu {
+  & ul {
+    & li {
+      &:hover >,
+      &.active > {
+        a {
+          color: $primary;
+        }
+      }
+      position: relative;
+      & + li {
+        margin-left: 60px;
+
+        @include max-screen(992, 1199) {
+          margin-left: 40px;
+        }
+      }
+      & a {
+        font-family: "Metropolis Semi Bold";
+        line-height: 2.3;
+        color: $nav-color;
+        font-size: 20px;
+        @include max-screen(992, 1199) {
+          font-size: 18px;
+        }
+        text-transform: capitalize;
+      }
+    }
+  }
+}

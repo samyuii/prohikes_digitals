@@ -1,0 +1,78 @@
+.blog-card {
+  .thumb {
+    overflow: hidden;
+    padding: 30px 30px;
+    border-radius: 6px;
+    a {
+      display: block;
+      img {
+        width: 100%;
+        border-radius: 6px;
+      }
+    }
+  }
+  &:hover {
+    .blog-content {
+      background: $lime-600;
+    }
+
+    img {
+      transform: scale(1.05);
+    }
+  }
+}
+
+
+
+.blog-content {
+  max-width: 330px;
+  background: $gray-600;
+  padding: 35px 20px;
+  @include max-screen(576, 767) {
+    padding: 35px 20px;
+
+  }
+  margin: -40px auto auto;
+  position: relative;
+  z-index: 2;
+  border-radius: 6px;
+  transition: all 0.5s ease-in-out;
+  .blog-meta {
+    display: inline-block;
+    font-family: "Metropolis Light";
+    color: $sub-headings-color;
+    line-height: 1.5;
+    margin-bottom: 0.3125rem;
+    font-size: 16px;
+    @include max-screen(576, 767) {
+      font-size: 14px;
+    }
+  }
+  .separator{
+    margin: 0 8px;
+  }
+  .title {
+    color: $card-headings-color;
+    &:hover {
+      color: $primary;
+    }
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 0px;
+    font-size: 24px;
+
+    @include max-screen(992, 1199) {
+      font-size: 20px;
+    }
+    @include max-screen(767) {
+      font-size: 20px;
+    }
+    @include max-screen(576, 767) {
+      font-size: 18px;
+    }
+    a {
+      color: inherit;
+    }
+  }
+}
+

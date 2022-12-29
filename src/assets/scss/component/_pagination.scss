@@ -1,0 +1,20 @@
+
+.page-item {
+    margin:  0px 10px;
+    &.active .page-link {
+      color: $pagination-active-color;
+      background: transparent;
+    }
+  }
+  
+
+
+.page-link {
+  font-weight: 600;
+  font-size: 18px;
+  color: $pagination-color;
+  background-color: $pagination-bg;
+  &:focus {
+    background-color: transparent;
+  }
+}

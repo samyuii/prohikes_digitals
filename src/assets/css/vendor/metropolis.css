@@ -1,0 +1,144 @@
+
+
+@font-face {
+  font-family: 'Metropolis Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Regular'), url('../../fonts/metropolis/Metropolis-Regular.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Regular Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Regular Italic'), url('../../fonts/metropolis/Metropolis-RegularItalic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Extra Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Extra Light'), url('../../fonts/metropolis/Metropolis-ExtraLight.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Light'), url('../../fonts/metropolis/Metropolis-Light.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Thin';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Thin'), url('../../fonts/metropolis/Metropolis-Thin.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Extra Light Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Extra Light Italic'), url('../../fonts/metropolis/Metropolis-ExtraLightItalic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Light Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Light Italic'), url('../../fonts/metropolis/Metropolis-LightItalic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Thin Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Thin Italic'), url('../../fonts/metropolis/Metropolis-ThinItalic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Medium'), url('../../fonts/metropolis/Metropolis-Medium.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Semi Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Semi Bold'), url('../../fonts/metropolis/Metropolis-SemiBold.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Bold'), url('../../fonts/metropolis/Metropolis-Bold.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Bold Italic'), url('../../fonts/metropolis/Metropolis-BoldItalic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Medium Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Medium Italic'), url('../../fonts/metropolis/Metropolis-MediumItalic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Semi Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Semi Bold Italic'), url('../../fonts/metropolis/Metropolis-SemiBoldItalic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Extra Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Extra Bold'), url('../../fonts/metropolis/Metropolis-ExtraBold.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Extra Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Extra Bold Italic'), url('../../fonts/metropolis/Metropolis-ExtraBoldItalic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Black'), url('../../fonts/metropolis/Metropolis-Black.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Metropolis Black Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Metropolis Black Italic'), url('../../fonts/metropolis/Metropolis-BlackItalic.woff') format('woff');
+  }

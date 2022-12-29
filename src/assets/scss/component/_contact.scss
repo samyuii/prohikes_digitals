@@ -1,0 +1,55 @@
+// contact-title-section
+
+.contact-title-section {
+  padding-bottom: 55px;
+  .title {
+    font-weight: 700;
+    color: $dark;
+    line-height: 1.916;
+    padding-bottom: 5px;
+    font-size: 24px;
+  }
+
+  p {
+    color: $dark;
+  }
+}
+
+// address
+
+.contact-address {
+  padding: 40px;
+  background: $lime-600;
+  @include min-screen(1200) {
+    padding: 70px;
+  }
+
+  @include max-screen(768,991) {
+    padding: 70px 180px;
+  }
+
+  border-radius: 6px;
+}
+
+.address-list {
+  .title {
+    font-weight: 600;
+    color: $dark;
+    line-height: 1.25;
+    text-decoration: underline;
+    margin-bottom: 25px;
+    font-size: 24px;
+    @include max-screen(767){
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+  }
+
+  .phone-number,
+  .mailto {
+    color: $body-color;
+    &:hover {
+      color: $primary;
+    }
+  }
+}

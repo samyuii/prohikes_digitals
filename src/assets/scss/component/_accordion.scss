@@ -1,0 +1,126 @@
+//
+// Base styles
+//
+
+.accordion-header {
+  display: flex;
+  align-items: flex-start;
+  font-weight: 700;
+  line-height: 2;
+  font-size: 16px;
+  font-family: $headings-font-family;
+
+  @include min-screen(1200) {
+    font-size: 24px;
+  }
+  @include max-screen(992, 1199) {
+    font-size: 18px;
+  }
+  @include max-screen(768, 991) {
+    font-size: 17px;
+  }
+  text-align: left;
+  padding: $accordion-button-padding-y $accordion-button-padding-x;
+  color: $accordion-button-active-color;
+  background-color: $accordion-button-bg;
+  border: 0px;
+
+  @include border-radius(0);
+
+  &.active {
+    border-bottom-width: 0;
+  }
+
+  &:not(.active) {
+    color: $accordion-button-color;
+    background-color: transparent;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  // Accordion icon
+  &::after {
+    display: none;
+  }
+}
+
+.accordion-header {
+  margin-bottom: 0;
+}
+
+.accordion-item {
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &:first-of-type {
+    .accordion-title {
+      @include border-top-radius($accordion-border-radius);
+    }
+  }
+
+  &:last-of-type {
+    .accordion-title {
+      // Only set a border-radius on the last item if the accordion is collapsed
+      &.active {
+        border-bottom-width: 0px;
+        @include border-bottom-radius($accordion-border-radius);
+      }
+    }
+
+    .accordion-collapse {
+      border-bottom-width: 0px;
+      @include border-bottom-radius($accordion-border-radius);
+    }
+  }
+}
+
+.accordion-collapse {
+  border: solid $accordion-border-color;
+  border-width: 0 0px;
+}
+
+.accordion-body {
+  display: none;
+  padding: 22px 0px 0px 40px;
+}
+
+// Flush accordion items
+//
+// Remove borders and border-radius to keep accordion items edge-to-edge.
+
+.accordion-flush {
+  .accordion-header {
+    border-right: 0;
+    border-left: 0;
+    @include border-radius(0);
+  }
+
+  .accordion-collapse {
+    border-width: 0;
+  }
+
+  .accordion-item {
+    &:first-of-type {
+      .accordion-header {
+        border-top-width: 0;
+        @include border-top-radius(0);
+      }
+    }
+
+    &:last-of-type {
+      .accordion-header.active {
+        border-bottom-width: 0;
+        @include border-bottom-radius(0);
+      }
+    }
+  }
+}
+
+.question-tag {
+  display: inline-block;
+  margin-right: 15px;
+  color: $dark;
+}

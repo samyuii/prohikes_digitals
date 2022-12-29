@@ -1,0 +1,223 @@
+/******************************** 
+ # offcanvas menu style
+ ********************************/
+
+/*------------------------------------- 
+ # Offcanvas Humbergar Menu Style Start
+ -------------------------------------*/
+
+.toggle {
+  margin-top: 10px;
+  @include min-screen(992) {
+    display: none;
+    outline: 0;
+  }
+}
+
+.toggle span {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 24px;
+  height: 2px;
+}
+.toggle span + span {
+  margin-top: 6px;
+}
+.toggle span::after,
+.toggle span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 100%;
+  flex: 1 0 100%;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: $dark;
+}
+.toggle span.icon-bottom::before,
+.toggle span.icon-top::before {
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
+  transform: scaleX(1) translateZ(0);
+  transform-origin: right;
+}
+.toggle span.icon-bottom::after,
+.toggle span.icon-top::after {
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  transform: scaleX(0) translateZ(0);
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+}
+.toggle span.icon-middle::before {
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
+
+  transform: scaleX(1) translateZ(0);
+  transform-origin: left;
+}
+.toggle span.icon-middle::after {
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  transform: scaleX(0) translateZ(0);
+  -webkit-transform-origin: right;
+  -ms-transform-origin: right;
+  transform-origin: right;
+}
+.toggle:hover span::after,
+.toggle:hover span::before {
+  background-color: $primary;
+}
+.toggle:hover span.icon-bottom::before,
+.toggle:hover span.icon-top::before {
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  transform: scaleX(0) translateZ(0);
+}
+.toggle:hover span.icon-bottom::after,
+.toggle:hover span.icon-top::after {
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
+  transform: scaleX(1) translateZ(0);
+}
+.toggle:hover span.icon-middle::before {
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transform: scaleX(0) translateZ(0);
+}
+.toggle:hover span.icon-middle::after {
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
+  transform: scaleX(1) translateZ(0);
+}
+/*------------------------------------- 
+ # Offcanvas Humbergar Menu Style ENd
+ -------------------------------------*/
+
+.offcanvas-modal {
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  transition: all .25s cubic-bezier(.645,.045,.355,1);
+  opacity: 0;
+  background: rgba(0,0,0,.7);
+  &.show{
+    visibility: visible;
+    opacity: 1;
+    .offcanvas-dialog{
+      transform: translateX(0);
+    }
+  }
+}
+
+.offcanvas-dialog {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  background-color: #fff;
+  z-index: 999;
+  transition: all .25s cubic-bezier(.645,.045,.355,1);
+  transform: translateX(100%);
+  &.show{
+    display: block;
+  }
+
+  .modal-content {
+    height: 100%;
+    border-radius: 0;
+    border: 0;
+  }
+}
+
+// offcanvas-header
+.offcanvas-header {
+  padding: 20px 15px;
+  border-bottom: 1px solid $list-group-border-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// offcanvas-logo
+
+.offcanvas-logo {
+  max-width: 160px;
+}
+.offcanvas-menu {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+.offcanvas-menu::before {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  background-color: $white;
+}
+
+.offcanvas-menu ul ul {
+  display: none;
+}
+
+.offcanvas-menu > ul > li > ul li {
+  border-bottom: 0px;
+  & a {
+    font-family: $font-family-base;
+    border-top: 1px solid $list-group-border-color;
+    padding-left: 30px;
+  }
+}
+.offcanvas-menu ul > li {
+  position: relative;
+  border-bottom: 1px solid $list-group-border-color;
+}
+.offcanvas-menu li.active > ul {
+  display: block;
+}
+
+.offcanvas-menu li a {
+  font-family: "Metropolis Semi Bold";
+  display: block;
+  text-transform: capitalize;
+  color: $nav-color;
+  padding: 15px;
+  position: relative;
+  font-size: 16px;
+}
+.offcanvas-menu ul li.active > a,
+.offcanvas-menu ul li a:hover {
+  background: #fff;
+}
+
+.menu-expand {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 15px;
+	text-align: center;
+  border-left: 1px solid $list-group-border-color;
+  cursor: pointer;
+  z-index: 9;
+}
+
+.offcanvas-menu .menu-expand:after {
+  content: "\ea99";
+  font-family: "IcoFont";
+}
+.offcanvas-menu .active > .menu-expand:after {
+  content: "\eab9";
+}
+
+/******************************** 
+# Offcanvas Menu Style End
+********************************/

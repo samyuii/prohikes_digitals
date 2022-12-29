@@ -1,0 +1,40 @@
+.about-shape {
+  position: absolute;
+  top: -100px;
+  @include max-screen(992, 1199) {
+    top: -130px;
+  }
+  right: 0;
+  z-index: -1;
+}
+
+.date-meta {
+  display: block;
+  font-family: $headings-font-family;
+  color: $card-headings-color;
+  line-height: 2.083;
+  text-transform: capitalize;
+  margin-bottom: 1.25rem;
+  font-size: 24px;
+  @include max-screen(991) {
+    margin-bottom: 1rem;
+    font-size: 20px;
+  }
+}
+
+.hr {
+  display: inline-block;
+  width: 63px;
+  height: 1px;
+  background: $hr;
+  position: relative;
+  top: -6px;
+  margin-left: 10px;
+}
+
+.path-img2 {
+  position: absolute;
+  left: 0;
+  bottom: -5%;
+  z-index: -1;
+}

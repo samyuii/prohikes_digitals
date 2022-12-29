@@ -1,0 +1,80 @@
+// banner-section
+.banner-section {
+  padding-top: 155px;
+
+  @include max-screen(991) {
+    padding-top: 140px;
+  }
+  @include max-screen(767) {
+    padding-top: 120px;
+  }
+}
+
+.banner-shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.banner-shape9 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  z-index: -1;
+  border-radius: 1%;
+}
+
+
+
+.banner-content {
+  .title {
+    color: $dark;
+    font-weight: 700;
+    line-height: 1.058;
+    margin-bottom: 2rem;
+    font-size: 68px;
+    @include max-screen(1200, 1500) {
+      font-size: 60px;
+    }
+    @include max-screen(1199) {
+      font-size: 40px;
+    }
+  }
+  & p {
+    font-size: 18px;
+    @include max-screen(991) {
+      font-size: 16px;
+    }
+  }
+}
+
+.banner-img {
+  @include min-screen(1500) {
+    margin-right: -150px;
+  }
+  @include min-screen(1920) {
+    margin-right: -215px;
+  }
+}
+
+.banner-padding {
+  @include min-screen(1701) {
+    padding-top: 145px;
+  }
+
+  @include max-screen(1500, 1700) {
+    padding-top: 140px;
+  }
+  @include max-screen(1200, 1499) {
+    padding-top: 60px;
+  }
+
+  @include max-screen(992, 1199) {
+    padding-top: 30px;
+  }
+}

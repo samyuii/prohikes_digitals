@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "thumb": "./images/team/1.png",
+        "name": "Yash Varindani",
+        "designation": "Head of Communications"
+    },
+    {
+        "id": 2,
+        "thumb": "./images/team/2.png",
+        "name": "Samyak Jain",
+        "designation": "Head of Design & Development"
+    },
+    {
+        "id": 3,
+        "thumb": "./images/team/3.png",
+        "name": "Praveen Karwa",
+        "designation": "Head of lead & Marketing"
+    },
+    {
+        "id": 4,
+        "thumb": "./images/team/4.png",
+        "name": "Saurabh",
+        "designation": "Graphic Designer"
+    },
+    {
+        "id": 5,
+        "thumb": "./images/team/6.png",
+        "name": "Anuja",
+        "designation": "Web developer"
+    },
+    {
+        "id": 6,
+        "thumb": "./images/team/7.png",
+        "name": "Harshit",
+        "designation": "Social media manager"
+    },
+    {
+        "id": 7,
+        "thumb": "./images/team/8.png",
+        "name": "Sakshi",
+        "designation": "Content Writer"
+    },
+    {
+        "id": 8,
+        "thumb": "./images/team/9.png",
+        "name": "Akshay",
+        "designation": "Assistant"
+    }
+]

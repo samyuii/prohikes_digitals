@@ -1,0 +1,124 @@
+.hero-slide-content {
+  @include max-screen(768, 1199) {
+    padding-top: 50px;
+  }
+}
+
+.hero-slider {
+  position: relative;
+  padding-top: 160px;
+  overflow: hidden;
+  @include min-screen(1200) {
+    display: flex;
+    align-items: center;
+    height: 600px;
+  }
+  @include min-screen(1500) {
+    display: flex;
+    align-items: center;
+    height: 800px;
+  }
+
+  .title {
+    animation-name: fadeInUp;
+    animation-delay: 0.9s;
+  }
+
+  .delay1 {
+    animation-name: fadeInUp;
+    animation-delay: 1.5s;
+  }
+  .delay2 {
+    animation-name: fadeInUp;
+    animation-delay: 2s;
+  }
+  .hero-img {
+    img {
+      animation-name: fadeInLeft;
+      animation-delay: 2.5s;
+    }
+  }
+}
+
+.hero-slide-content {
+  .title {
+    font-weight: 700;
+    font-size: 55px;
+    @include min-screen(1500) {
+      font-size: 60px;
+    }
+    @include max-screen(992, 1199) {
+      font-size: 45px;
+    }
+    @include max-screen(767) {
+      font-size: 35px;
+      line-height: 1.4;
+    }
+    @include max-screen(480) {
+      font-size: 30px;
+    }
+    @include max-screen(576, 767) {
+      font-size: 45px;
+    }
+    line-height: 1.2;
+    margin-bottom: 3.75rem;
+  }
+}
+.hero-img {
+  @include min-screen(1200) {
+    position: relative;
+    bottom: 0px;
+    right: 0;
+  }
+  max-width: 904px;
+  @include max-screen(1200, 1499) {
+    max-width: 700px;
+  }
+
+  @include max-screen(1500, 1800) {
+    max-width: 48%;
+  }
+}
+
+.negative-margin {
+  @include min-screen(1200) {
+    margin-top: 100px;
+  }
+}
+
+.hero-shape1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  @include min-screen(1500) {
+    max-width: 1007px;
+  }
+  @include min-screen(1200) {
+    max-width: 55%;
+  }
+}
+.hero-shape2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  max-width: 878px;
+
+  @include max-screen(1500, 1800) {
+    max-width: 735px;
+  }
+
+  @include max-screen(1499) {
+    max-width: 735px;
+  }
+
+  @include max-screen(1199) {
+    display: none;
+  }
+
+  @include max-screen(1199) {
+    top: auto;
+    bottom: 0;
+  }
+}

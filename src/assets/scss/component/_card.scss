@@ -1,0 +1,111 @@
+/*--------------------------------------
+/*  1 feature card
+----------------------------------------*/
+
+.card-shape {
+  position: absolute;
+  display: block;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  &-light {
+    background: $lime-100;
+    top: -100%;
+    right: -100%;
+    z-index: 1;
+    transition: ease-in-out 0.5s;
+  }
+  &-dark {
+    top: -100%;
+    right: -100%;
+    background: $lime-800;
+    z-index: 2;
+    transition: ease-in-out 0.8s;
+  }
+}
+.grid-item {
+  .feature-card {
+    position: relative;
+    overflow: hidden;
+    padding: 2.8125rem 1.875rem;
+    @include max-screen(992, 1199) {
+      padding: 25px;
+    }
+    border-radius: 6px;
+    transition: all 0.5s ease-in-out;
+    &.bg-light {
+      &:hover,
+      &.active {
+        background-color: $lime-600 !important;
+        box-shadow: 0px 16px 27px 0px rgba(0, 0, 0, 0.08);
+      }
+    }
+    .title {
+      color: $card-headings-color;
+      text-transform: capitalize;
+      font-weight: 600;
+      line-height: 1.25;
+      font-size: 24px;
+      a {
+        color: inherit;
+      }
+      @include max-screen(992, 1199) {
+        font-size: 18px;
+      }
+      @include max-screen(767) {
+        font-size: 20px;
+      }
+    }
+    &:hover,
+    &.active {
+      .card-shape-light {
+        top: -50px;
+        right: -50px;
+      }
+      .card-shape-dark {
+        top: -65px;
+        right: -55px;
+      }
+    }
+  }
+}
+
+/*--------------------------------------
+/*  2 service card
+----------------------------------------*/
+
+.service-card {
+  padding: 2.1875rem 1.875rem;
+  @include max-screen(992, 1199) {
+    padding: 25px;
+  }
+  border-radius: 6px;
+  transition: all 0.5s ease-in-out;
+  &.bg-light {
+    &:hover,
+    &.active {
+      background-color: $lime-600 !important;
+      box-shadow: 0px 16px 27px 0px rgba(0, 0, 0, 0.08);
+    }
+  }
+
+  .title {
+    color: $card-headings-color;
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-top: 1.875rem;
+    margin-bottom: 1.25rem;
+    font-size: 24px;
+    a {
+      color: inherit;
+    }
+    @include max-screen(992, 1199) {
+      font-size: 18px;
+    }
+
+    @include max-screen(767) {
+      font-size: 20px;
+    }
+  }
+}

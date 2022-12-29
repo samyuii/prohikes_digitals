@@ -1,0 +1,58 @@
+.btn {
+  font-family: "Metropolis Semi Bold";
+  text-transform: capitalize;
+  &:focus {
+    box-shadow: none;
+  }
+}
+@each $name, $value in $theme-colors {
+  .btn-#{$name} {
+    border-color: $value;
+    background-color: $value;
+
+    @if $name == secondary {
+      color: $card-headings-color;
+      background: $transparent;
+      border-color: $transparent;
+      text-decoration: underline;
+    } @else {
+      color: $white;
+    }
+  }
+
+  .btn-hover-#{$name} {
+    &:hover {
+      border-color: $value;
+      background-color: $value;
+      @if $name == light {
+        color: $headings-color;
+      } @else if $name == warning {
+        color: $headings-color;
+      } @else if $name == dark {
+        color: $white;
+        background: $primary;
+        border-color: $primary;
+      } @else if $name == secondary {
+        color: $white;
+        background: $primary;
+        border-color: $primary;
+      } @else {
+        color: $white;
+      }
+    }
+  }
+}
+
+@include max-screen(1024) {
+  .btn-lg {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
+
+@include max-screen(767) {
+  .btn-lg {
+    padding: 0.9375rem;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,24 @@
+.grid {
+  @include max-screen(991) {
+    margin-top: 30px;
+  }
+}
+
+.grid-item {
+  float: left;
+  width: 33.333%;
+  @include max-screen(576, 991) {
+  }
+  @include max-screen(768) {
+    width: 100%;
+  }
+}
+
+.card-mt-75 {
+  @include min-screen(576) {
+    margin-top: 50px;
+  }
+  @include min-screen(992) {
+    margin-top: 80px;
+  }
+}
