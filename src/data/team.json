@@ -32,7 +32,7 @@
     {
         "id": 6,
         "thumb": "./images/team/7.png",
-        "name": "Harshit",
+        "name": "Gaurav",
         "designation": "Social media manager"
     },
     {
@@ -44,7 +44,7 @@
     {
         "id": 8,
         "thumb": "./images/team/9.png",
-        "name": "Akshay",
+        "name": "Harshit",
         "designation": "Assistant"
     }
 ]

@@ -20,8 +20,10 @@ const ContactPage = () => {
                         excerpt="Our digital marketing team is always ready to help. Give us a call, send us an email, or fill out the form below."
                         image="./images/contact/1.png"
                     />
-                    <ContactContainer />
+                    <br />
+                    <br />
                     <CalendlyArea />
+                    <ContactContainer />
                     <Footer />
                     <ScrollToTop />
                 </div>

@@ -25,6 +25,13 @@ const Footer = () => {
                                     <li>
                                         <SocialIcon
                                             classOption="footer-social-link"
+                                            path="https://whatsapp.com/dl/"
+                                            icon="icofont-whatsapp"
+                                        />
+                                    </li>
+                                    <li>
+                                        <SocialIcon
+                                            classOption="footer-social-link"
                                             path="https://www.facebook.com/"
                                             icon="icofont-facebook"
                                         />
@@ -32,22 +39,8 @@ const Footer = () => {
                                     <li>
                                         <SocialIcon
                                             classOption="footer-social-link"
-                                            path="https://www.instagram.com/"
+                                            path="https://www.instagram.com/pro_hikes/"
                                             icon="icofont-instagram"
-                                        />
-                                    </li>
-                                    <li>
-                                        <SocialIcon
-                                            classOption="footer-social-link"
-                                            path="https://twitter.com/"
-                                            icon="icofont-twitter"
-                                        />
-                                    </li>
-                                    <li>
-                                        <SocialIcon
-                                            classOption="footer-social-link"
-                                            path="https://www.whatsapp.com/"
-                                            icon="icofont-whatsapp"
                                         />
                                     </li>
                                 </ul>
@@ -195,33 +188,33 @@ const Footer = () => {
                                     <li>
                                         <a
                                             className="address-link"
-                                            href="tel:+12354569874"
+                                            href="tel:+917610805234"
                                         >
-                                            +917610805234
+                                            +91 7610805234
                                         </a>
                                     </li>
                                     <li>
                                         <a
                                             className="address-link"
-                                            href="tel:+98745612398"
+                                            href="tel:+9191660111289"
                                         >
-                                            +918619465162
+                                            +91 91660111289
                                         </a>
                                     </li>
                                     <li>
                                         <a
                                             className="address-link"
-                                            href="mailto:prohikes.sm@gmail.com"
+                                            href="mailto:business.prohikes@gmail.com"
                                         >
-                                            prohikes.sm@gmail.com
+                                            business.prohikes@gmail.com
                                         </a>
                                     </li>
                                     <li>
                                         <a
                                             className="address-link"
-                                            href="mailto:prohikes.sm@gmail.com"
+                                            href="mailto:business@prohikes.tech"
                                         >
-                                            www.prohikes.tech
+                                            business@prohikes.tech
                                         </a>
                                     </li>
                                 </ul>

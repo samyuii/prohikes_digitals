@@ -56,6 +56,13 @@ const BlogDetailsWrap = ({ data }) => {
                     <li>
                         <SocialIcon
                             classOption="null"
+                            path="https://whatsapp.com/dl/"
+                            icon="icofont-whatsapp"
+                        />
+                    </li>
+                    <li>
+                        <SocialIcon
+                            classOption="null"
                             path="https://www.facebook.com/"
                             icon="icofont-facebook"
                         />
@@ -63,14 +70,7 @@ const BlogDetailsWrap = ({ data }) => {
                     <li>
                         <SocialIcon
                             classOption="null"
-                            path="https://www.twitter.com/"
-                            icon="icofont-twitter"
-                        />
-                    </li>
-                    <li>
-                        <SocialIcon
-                            classOption="null"
-                            path="https://www.instagram.com/"
+                            path="https://www.instagram.com/pro_hikes/"
                             icon="icofont-instagram"
                         />
                     </li>

@@ -43,7 +43,7 @@ const TestimonialReverse = () => {
                             />
                             <h5 className="happy-customer">
                                 More over{" "}
-                                <span className="font-weight-bold">2500</span>{" "}
+                                <span className="font-weight-bold">50</span>{" "}
                                 happy customer
                             </h5>
                         </div>

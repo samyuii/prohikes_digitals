@@ -9,12 +9,12 @@
         "id": 2,
         "classOption": "address-list mb-4 mb-xl-10 pb-2",
         "title": "Phone Number",
-        "info": " +917610805234 <br /> +918619465162 "
+        "info": " +91 7610805234 <br />+91 9166011289<br /> +91 8619465162 "
     },
     {
         "id": 3,
         "classOption": "address-list",
         "title": "Web Address",
-        "info": "prohikes.sm@gmail.com <br /> www.prohikes.tech"
+        "info": "business.prohikes@gmail.com <br /> business@prohikes.tech"
     }
 ]

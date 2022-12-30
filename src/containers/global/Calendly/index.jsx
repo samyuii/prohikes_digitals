@@ -16,7 +16,7 @@ const CalendlyArea = () => {
                         />
                     </div>
                     <div className="App">
-                        <InlineWidget url="https://calendly.com/prohikes/home-improvement" />
+                        <InlineWidget url="https://calendly.com/prohikes/strategy-call" />
                     </div>
                 </div>
             </div>
